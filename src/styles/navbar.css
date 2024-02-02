@@ -238,3 +238,11 @@
         }
     }
 }
+
+
+@media screen and (max-width: 550px) { 
+    .navbar-drop-down
+    {
+        left: 80%;
+    }
+}
