@@ -1,17 +1,19 @@
 .navbar-container{
-    /* background-color: #6b1a22; */
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: center;
-    background-color:  #491116;
+    background-image: linear-gradient(to bottom, #57151b ,#491116);
+    border-bottom: 2px solid white;
     height: 65px;
     z-index: 50;
 }
 
-.navbar_logo_container {
+.navbar-logo-container {
     width: 200px;
 }
 
-.navbar_logo {
+.navbar-logo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,23 +23,23 @@
     border-radius: 50%;
 
     position: absolute;
-    top: 4%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -35%); /* Adjust for exact centering */
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     z-index: 50;
 }
 
-.navbar_logo img{
+.navbar-logo img{
     width: 90px;
 }
 
-.navbar_links {
+.navbar-links {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.navbar_links a { 
+.navbar-links a { 
     font-family: 'Roboto', sans-serif;
     width: 100px;
     text-align: center;
@@ -46,4 +48,193 @@
     font-weight: 300;
     color: rgb(243, 243, 243);
     text-decoration: none;
+}
+
+.navbar-links .active { 
+    color: white;
+    font-weight: 400;
+    border-bottom: 3px solid white;
+    border-radius: 1px;
+}
+
+.scroll
+{
+    background-color: rgba(0, 0, 0, 0.555);
+    background-image: none;
+    box-shadow: none;
+    animation: headerShow .5s;
+}
+
+.scroll .Header-drop-down
+{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.scroll .Header-drop-down i
+{
+    color: white;
+}
+.scroll .Header-sidebar
+{
+    background-color: rgba(0, 0, 0, 0.733);
+}
+
+
+.navbar-drop-down
+{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 20%;
+    left: 90%;
+    justify-self: right;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-drop-down i
+{   
+    font-size: 30px;
+    color: white;
+}
+
+
+.nav-sidebar
+{
+    display: none;
+    border-top: 2px #491116 solid;
+    animation: slide-in .65s ease-in-out;
+    position: fixed;
+    top: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+    a
+    {
+        width: 75px;
+        text-align: center;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        letter-spacing: .5px;
+        font-size: 15px;
+        margin-top: .5rem;
+        padding: .5rem 0;
+        text-decoration: none;
+
+        .underline
+        {
+            opacity: 0;
+            margin-top: .25rem;
+            width: 100%;
+            height: 2px;
+        }
+    }
+    a:hover
+    {
+        .underline
+        {
+            opacity: 1;
+            animation: textShow .3s;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+
+    &.close
+    {
+        animation: slide-out .65s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+
+
+@keyframes headerShow
+{
+    0%   {opacity: 0; transform: translateY(-5rem);}
+    100% {opacity: 1; transform: translateY(0);} 
+}
+
+@keyframes textShow {
+    0%   {opacity: 0; transform: scale(0);}
+    25%   {opacity: 1; transform: scale(.25);}
+    50%   {opacity: 1; transform: scale(.5);}
+    75%   {opacity: 1; transform: scale(.75);}
+    100% {opacity: 1; transform: scale(1);  background-color: rgb(255, 255, 255)} 
+}
+
+@keyframes slide-in
+{
+    0%   {transform: translateX(50%); opacity: 0;}
+    25% {opacity: .25;}  
+    50% {opacity: .5;}  
+    75% {opacity: .75;}  
+    100% {transform: translate(0, 0); opacity: 1;}  
+}
+
+@keyframes slide-out
+{
+    0%   {left: 0px; opacity: 1;}
+    25% {opacity: .75;}  
+    50% {opacity: .5;}  
+    75% {opacity: .25;}  
+    100% {transform: translate(10%); opacity: 0; display: none;}  
+}
+
+
+@media screen and (max-width: 1500px) {
+    .navbar-container
+    {
+        height: 60px;
+    }
+
+    .navbar-logo { 
+        height: 80px;
+        width: 80px;
+    }
+    .navbar-logo img
+    {
+        width: 75px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .navbar-links{
+        display: none;
+    }
+
+    .navbar-drop-down
+    {
+        display: block;
+    }
+
+    .nav-sidebar
+    {
+        display: flex;
+    }
+
+    .navbar-logo img
+    {
+        width: 55px;
+    }
+
+    .navbar-logo { 
+        height: 70px;
+        width: 70px;
+    }
+}
+
+
+@media screen and (max-width: 700px) 
+{
+    .nav-sidebar
+    {
+        a{
+            font-size: 13px;
+        }
+    }
 }

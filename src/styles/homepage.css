@@ -4,7 +4,7 @@
     position: relative;
     width: 100%;
     height: 1350px;
-    max-height: 90vh;
+    max-height: 97vh;
     min-height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,9 +21,10 @@
     align-items: center;
     height: 80%;
     justify-content: space-evenly;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
+    font-family: 'Roboto', sans-serif;
 }
 
 .Landing-text
@@ -31,13 +32,11 @@
     color: white;
     text-align: center;
     letter-spacing: 1px;
-
 }
 
 .Landing-text h1
 {
-    color: rgba(255, 255, 255, 0.884);
-    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 35px;
     font-weight: 200;
 }
@@ -45,14 +44,14 @@
 .Landing-text h2
 {
     font-family: 'Ephesis', sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255);
     font-size: 150px;
-    font-weight: 100;
 }
 
 .Landing-text p
 {
-    color: rgba(255, 255, 255, 0.822);
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 25px;
 }
 
@@ -60,18 +59,24 @@
 {
     font-size: 30px;
     padding-top: .5rem;
-
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .Landing-Icons i
 {
-
     margin: 0 1rem;
+}
+
+.Landing-Icons i:hover
+{
+    cursor: pointer;
+    color: white;
+    transform: scale(1.1);
 }
 
 .Landing-About
 {
-    color: rgba(255, 255, 255, 0.815);
+    color: rgba(255, 255, 255, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +84,8 @@
 
 .Landing-About h2
 {
-    font-weight: 300;
+    font-size: 27px;
+    font-weight: 200;
     padding: 0 1rem;
 }
 
@@ -112,4 +118,79 @@
     border-color: #491116;
     background-color: #491116;
     color: white;
+}
+
+
+@media screen and (max-width: 1500px) {
+
+    .Landing-text
+    {
+        h1
+        {
+            font-size: 30px;
+        }
+        h2
+        {
+            font-size: 120px;
+        }
+
+        p
+        {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .Landing-About
+    {
+        h2
+        {  
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Landing-info
+    {
+        width: 100%;
+    }
+    
+    .Landing-text
+    {
+        width: 100%;
+        h1
+        {
+            font-size: 25px;
+        }
+        h2
+        {
+            font-size: 70px;
+        }
+        p
+        {
+            font-size: 15px;
+        }
+    }
+    
+    .Landing-About
+    {
+        h2
+        {  
+            font-size: 13px;
+            padding: 0 .5rem;
+            .about-icon
+            {
+                padding-right: .5rem;
+            }
+        }
+    }
+
+    .Landing-button
+    {
+        font-size: 15px;
+        font-weight: 300;
+        padding-top: .4rem;
+    }
 }
