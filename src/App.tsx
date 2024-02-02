@@ -7,6 +7,7 @@ import Quiz from './pages/Quiz';
 
 // Componets
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
           <Route path='/quiz' Component={Quiz}/>
           <Route path='/' Component={Homepage}/>
         </Routes>
+
+        <Footer/>
       </Router>
     </div>
 

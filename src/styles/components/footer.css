@@ -1,0 +1,159 @@
+.Footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #410e12f8;
+    background-position: center;
+    background-size: cover;
+}
+.Footer-top
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Footer-bottom
+{
+    background-color: rgba(0, 0, 0, 0.712);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+}
+
+.Footer-copyright
+{
+    color: white;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 300;
+}
+
+.Footer-Icons
+{
+    i
+    {
+        font-size: 30px;
+        padding: 0 1rem;
+        color: white;
+    }
+}
+
+.Form
+{
+    width: 50%;
+    padding: 1rem 0;
+}
+
+.ContactForm
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-1-title
+{
+    h1
+    {
+        letter-spacing: 1.5px;
+        padding-bottom: .5rem;
+    }
+}
+
+.ContactForm-input
+{
+    font-family: "Roboto", "sans-serif";
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 3px;
+    width: 500px;
+    margin-bottom: .5rem;
+    padding: .25rem .5rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    outline: none;
+}
+.large
+{
+    height: 100px;
+}
+
+.ContactForm-input::placeholder
+{
+    color: rgb(110, 110, 110);
+}
+
+.ContactForm-btn
+{
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 18px;
+    border: 2px solid white;
+    color: white;
+    padding: .5rem 2rem;
+    background-color: rgba(128, 128, 128, 0);
+    outline: none;
+
+    margin-top: 1rem;
+
+    transition: background-color .5s, color .5s;
+}
+
+.ContactForm-btn:hover
+{
+    background-color: white;
+    color: black;
+}
+
+@media(max-width: 900px) {
+    /* For mobile phones: */
+
+    .info-1-title
+    {
+        h1
+        {
+            font-size: 25px;
+        }
+    }
+    .Form
+    {
+        width: 100%;
+    }
+    .ContactForm
+    {
+        width: 100%;
+    }
+    .ContactForm-input
+    {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .ContactForm-btn
+    {
+        font-size: 15px;
+        padding: .5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) 
+{
+    .Footer-copyright
+    {
+        font-size: 10px;
+    }
+
+    .Footer-Icons
+    {
+        i
+        {
+            font-size: 15px;
+            padding: 0 .4rem;
+        }
+    }
+}

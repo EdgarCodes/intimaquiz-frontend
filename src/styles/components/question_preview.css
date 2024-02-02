@@ -1,0 +1,147 @@
+.preview
+{
+    width: 100%;
+    height: 350px;
+    background-image: url("https://storage.googleapis.com/intima-bucket/homepage_2.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview-info-container
+{
+    width: 60%;
+}
+
+.preview-img-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    img
+    {
+        padding: 0 1rem;
+        max-height: 100%;
+    }
+}
+
+.preview-content
+{
+    color: white;
+    font-family: "Roboto", "Sans-serif";
+    text-align: center;
+
+    padding-top: 1.5rem;
+    h1
+    {
+        font-weight: 300;
+        font-size: 25px;
+    }
+
+    h2
+    {
+        font-weight: 300;
+        padding-top: 3rem;
+    }
+
+}
+
+.preview-next
+{
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0 1rem;
+    outline: none;
+    i
+    {
+        color: white;
+        font-size: 30px;
+    }
+}
+
+.preview-next:hover
+{
+    transform: scale(.95);
+    i{
+        color: rgba(255, 255, 255, 0.315);
+    }
+}
+
+
+
+@media screen and (max-width: 900px) 
+{
+    .preview
+    {
+        height: 350px;
+    }
+    .preview-img-container
+    {
+        height: 100px;
+    }
+
+    .preview-content
+    {
+        h1
+        {
+            font-size:  25px;
+        }
+
+        h2
+        {
+            font-size:  20px;
+            padding-top: 2rem;
+        }
+    }
+
+    .preview-next
+    {
+        i
+        {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) 
+{
+    .preview-info-container
+    {
+        width: 100%;
+    }
+    .preview-img-container
+    {
+        height: 80px;
+    }
+
+    .preview-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1
+        {
+            width: 90%;
+            font-size:  20px;
+        }
+
+        h2
+        {
+            font-size:  18px;
+            padding-top: 2rem;
+        }
+    }
+
+    .preview-next
+    {
+        i
+        {
+            font-size: 20px;
+        }
+    }
+}
