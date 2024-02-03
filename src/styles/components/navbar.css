@@ -3,14 +3,15 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to bottom, #57151b ,#491116);
+    background-image: linear-gradient(to bottom, #531217 ,#491116);
     border-bottom: 2px solid white;
+    font-family: 'Roboto', sans-serif;
     height: 65px;
-    z-index: 50;
+    z-index: 50; /* Ensures Navbar is always on top */
 }
 
 .navbar-logo-container {
-    width: 200px;
+    width: 150px;
 }
 
 .navbar-logo {
@@ -19,9 +20,8 @@
     justify-content: center;
     height: 100px;
     width: 100px;
-    background-color:  rgb(255, 255, 255);
+    background-color:  white;
     border-radius: 50%;
-
     position: absolute;
     top: 4%;
     left: 50%;
@@ -40,13 +40,12 @@
 }
 
 .navbar-links a { 
-    font-family: 'Roboto', sans-serif;
     width: 100px;
     text-align: center;
     margin: 0 1rem;
     font-size: 16px;
     font-weight: 300;
-    color: rgb(243, 243, 243);
+    color: white;
     text-decoration: none;
 }
 
@@ -63,22 +62,23 @@
     background-image: none;
     box-shadow: none;
     animation: headerShow .5s;
-}
 
-.scroll .Header-drop-down
-{
-    background-color: rgba(255, 255, 255, 0);
-}
+    .Header-drop-down
+    {
+        background-color: rgba(255, 255, 255, 0);
+    }
 
-.scroll .Header-drop-down i
-{
-    color: white;
-}
-.scroll .Header-sidebar
-{
-    background-color: rgba(0, 0, 0, 0.733);
-}
+    .Header-drop-down i
+    {
+        color: white;
+    }
 
+    .Header-sidebar
+    {
+        background-color: rgba(0, 0, 0, 0.733);
+    }
+
+}
 
 .navbar-drop-down
 {
@@ -98,7 +98,6 @@
     font-size: 30px;
     color: white;
 }
-
 
 .nav-sidebar
 {
@@ -221,9 +220,16 @@
         height: 70px;
         width: 70px;
     }
+
+    .navbar-logo-container 
+    {
+        height: 70px;
+        width: 70px;
+    }
+
 }
 
-@media screen and (max-width: 700px) 
+@media screen and (max-width: 600px) 
 {
     .nav-sidebar
     {
@@ -231,9 +237,7 @@
             font-size: 13px;
         }
     }
-}
-
-@media screen and (max-width: 550px) { 
+    
     .navbar-drop-down
     {
         left: 80%;

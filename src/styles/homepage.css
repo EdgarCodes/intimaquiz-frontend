@@ -12,7 +12,6 @@
     background-image: url("https://storage.googleapis.com/intima-bucket/homepage_1.png");
 }
 
-
 .Landing-info
 {
     position: absolute;
@@ -129,44 +128,6 @@
     align-items: center;
 }
 
-.informational {
-    display: flex;
-    min-height: 500px;
-    width: 50%;
-    background-color: #491116f8;
-    color: rgb(255, 255, 255);
-}
-
-.informational-container {
-    width: 60%;
-    max-width: 1000px;
-    margin-left: 5rem;
-    margin-top: 2rem;
-}
-
-.informational-container h1{
-    font-weight: 500;
-    margin-bottom: 2rem;
-}
-
-.informational-underline {
-    width: 100px;
-    height: 6px;
-    background-color: rgb(255, 252, 252);
-    margin-bottom: 2rem;
-}
-
-.informational-list-item h2{
-    font-size: 25px;
-    font-weight: 300;
-    margin-top: 1rem;
-}
-
-.informational-list-item p{
-    font-weight: 300;
-}
-
-
 @media screen and (max-width: 1500px) {
 
     .Landing-text
@@ -199,21 +160,9 @@
     .info-container {
         flex-direction: column;
     }
-
-    .informational {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .informational-container
-    {
-        margin-left: 0;
-        width: 90%;
-        max-width: 800px;
-    }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .Landing-info
     {
         width: 100%;

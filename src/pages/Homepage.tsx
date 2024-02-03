@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import "../styles/homepage.css"
 import Paragraph from '../components/Paragraph';
 import QuestionPreviews from '../components/single-use/QuestionPreview';
+import Informational from '../components/Informational';
+import SessionForm from '../components/SessionForm';
 
 function Homepage() {
   return (
@@ -47,41 +49,40 @@ function Homepage() {
           sunt in culpa qui officia deserunt mollit anim id est laborum.
         </Paragraph>
 
-        <div className='informational'>
-          <div className='informational-container'>
-            <h1>How Does it Work?</h1>
-            <div className = "informational-underline"/>
-
-            <div className='informational-list'>
-              <div className='informational-list-item'>
-                <h2>1. Start the Quiz</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-              </div>
-
-              <div className='informational-list-item'>
-                <h2>2. Take Quizzes Seperately</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-              </div>
-
-              <div className='informational-list-item'>
-                <h2>2. Share Common Results</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-              </div>
+        <Informational title="How Does it Work?">
+            <div className='informational-list-item'>
+              <h2>1. Start the Quiz</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
-          </div>
-        </div>
+
+            <div className='informational-list-item'>
+              <h2>2. Take Quizzes Seperately</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+
+            <div className='informational-list-item'>
+              <h2>2. Share Common Results</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+        </Informational>
       </div>
       
 
       <QuestionPreviews/>
 
       <div className='info-container'>
-        <Paragraph title="What Quizzes Are Available?">
+        <Paragraph title="Available Quizzes">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
           sunt in culpa qui officia deserunt mollit anim id est laborum.
         </Paragraph>
+
+        <Informational title="Have a Code?" optional_class="fit">
+          <SessionForm/>
+        </Informational>
       </div>
+
+
 
     </div>
     

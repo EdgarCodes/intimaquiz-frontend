@@ -22,8 +22,6 @@ function ContactForm() {
         e.preventDefault();
         console.log(name, email, message);
 
-
-
         if((name === "" || email === "" || message === ""))
         {
             
@@ -60,12 +58,10 @@ function ContactForm() {
     return (
         <div className = "Form">
             <div className = "info-1-title" style = {{paddingTop: "0", textAlign: "center"}}>
-                <h1 style = {{color:"white"}}>Contact Us!</h1>
+                <h1 style = {{color:"white", fontWeight: 400}}>Contact Us!</h1>
             </div>
             <form onSubmit = {handleSubmit} 
             className = "ContactForm"
-            method ="POST" 
-            data-netlify="true"
             name="contact">
                 <input
                 type="text"

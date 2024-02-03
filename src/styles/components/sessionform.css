@@ -1,0 +1,70 @@
+.sessionform{
+    font-family: "Roboto", "sans-serif";
+}
+
+.sessionform h1{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.sessionform p{ 
+    color: rgba(255, 255, 255, 0.767);
+    font-weight: 300;
+}
+
+.sessionform-textbox{
+
+    font-size: 18px;
+    font-weight: 300;
+    width: 500px;
+    margin-bottom: .5rem;
+    padding: .5rem .5rem;
+    border: 2px solid white;
+    background-color: #491116;
+    color: white;
+    outline: none;
+}
+
+.sessionform-textbox::placeholder {
+    color: rgba(255, 255, 255, 0.712);
+}
+
+.sessionform-btn {
+    display: block;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 18px;
+    border: 2px solid white;
+    color: white;
+    padding: .5rem 2rem;
+    background-color: #ffffff00;
+    outline: none;
+
+    margin-top: 1rem;
+
+    transition: background-color .5s, color .5s;
+}
+
+.sessionform-btn:hover
+{
+    background-color: white;
+    color: #491116;
+    border-color: white;
+}
+
+
+
+@media(max-width: 900px) {
+    /* For mobile phones: */
+    .sessionform-textbox
+    {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .sessionform-btn
+    {
+        font-size: 15px;
+        padding: .5rem 1.5rem;
+    }
+}

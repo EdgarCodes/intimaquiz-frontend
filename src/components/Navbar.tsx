@@ -1,6 +1,9 @@
 import { NavLink as Link } from "react-router-dom";
+import { useState } from "react";
+
+//Styles
 import "../styles/components/navbar.css"
-import { useRef, useState } from "react";
+
 
 function Navbar() {
     const [isOffScreen, setIsOffScreen] = useState(false);
@@ -12,6 +15,7 @@ function Navbar() {
     }
 
     const getIsOpen = () =>{
+        // Returns class name based on isOpen
         if(isOpen === null)
         {
             return "close";
@@ -25,14 +29,15 @@ function Navbar() {
     }
 
     window.onscroll = () =>{
-      if(document.body.scrollTop > 95 || document.documentElement.scrollTop > 95)
-      {
-          setIsOffScreen(true);
-      }
-      else
-      {
-          setIsOffScreen(false);
-      }
+        // Shows different UI based on where the user scrolls
+        if(document.body.scrollTop > 95 || document.documentElement.scrollTop > 95)
+        {
+            setIsOffScreen(true);
+        }
+        else
+        {
+            setIsOffScreen(false);
+        }
       
     };
 
@@ -65,7 +70,7 @@ function Navbar() {
 
             
 
-            {/* For smaller screens */}
+            {/* For smaller screens, a new navbar is shown */}
 
             <button className = "navbar-drop-down" onClick={toggleIsOpen}>
                 <i className="fas fa-bars"/>
