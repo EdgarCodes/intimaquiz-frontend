@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
-    background-image: url("https://storage.googleapis.com/intima-bucket/homepage_1.png");
+    background-image: url("https://storage.googleapis.com/intima-bucket/homepage_1_compressed.jpg");
 }
 
 .Landing-info
@@ -42,9 +42,10 @@
 
 .Landing-text h2
 {
-    font-family: 'Ephesis', sans-serif;
+    /* font-family: 'Ephesis', sans-serif; */
+    font-family: 'Tangerine', sans-serif;
     color: rgba(255, 255, 255);
-    font-size: 150px;
+    font-size: 160px;
 }
 
 .Landing-text p

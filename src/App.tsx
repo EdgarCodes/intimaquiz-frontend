@@ -3,6 +3,7 @@ import "./styles/app.css"
 
 // Pages
 import Homepage from './pages/Homepage';
+import QuizCreate from './pages/QuizCreate';
 import Quiz from './pages/Quiz';
 
 // Componets
@@ -17,7 +18,8 @@ function App() {
         <Navbar/>
 
         <Routes>
-          <Route path='/quiz' Component={Quiz}/>
+          <Route path='/quiz-create' Component={QuizCreate}/>
+          <Route path='/quiz/:session_id' Component={Quiz}/>
           <Route path='/' Component={Homepage}/>
         </Routes>
 

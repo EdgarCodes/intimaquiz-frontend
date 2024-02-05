@@ -37,7 +37,7 @@ function Homepage() {
                   <h2><i className="fas fa-solid fa-heart about-icon"></i> Intimate </h2>
               </div>  
               
-              <Link className = "Landing-button" to ="/Quiz">Take Quiz Now</Link>
+              <Link className = "Landing-button" to ="/quiz-create">Take Quiz Now</Link>
           </div>            
       </div>
 

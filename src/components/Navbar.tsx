@@ -46,7 +46,7 @@ function Navbar() {
             <div className="navbar-links">
                 <Link to="/" className={({ isActive }) => (isActive? 'active':'')}><div>Home</div></Link>
 
-                <Link to="/quiz" className={({ isActive }) => (isActive? 'active':'')}><div>Take Quiz</div></Link>
+                <Link to="/quiz-create" className={({ isActive }) => (isActive? 'active':'')}><div>Take Quiz</div></Link>
 
                 <Link to="/reviews" className={({ isActive }) => (isActive? 'active':'')}><div>Reviews</div></Link>
             </div>

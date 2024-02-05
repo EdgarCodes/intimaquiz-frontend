@@ -1,0 +1,256 @@
+
+
+.user-forms{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+.user-form{
+    border: 1px solid #49111618;
+    border-radius: 5px;
+}
+
+.user-form-content{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-header{
+    background-color: #491116;
+    font-size: 19px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    padding: .5rem 1rem;
+    border-bottom: 3px solid white;
+    color: white;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.user-form-content{
+    min-width: 600px;
+    padding: 1rem 0;
+    background-color: white;
+}
+
+.userform-textbox-title{
+    color: rgb(37, 37, 37);
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.userform-textbox {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: .5rem;
+    padding: .5rem .5rem;
+    border: 2px solid rgba(0, 0, 0, 0.192);
+    background-color: white;
+    color: rgb(0, 0, 0);
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.userform-textbox::placeholder {
+    color: rgb(216, 216, 216);
+}
+
+.userform-btn-container{
+    display: flex;
+    justify-content: center;
+    background-color: #491116;
+    padding: 1rem 0 1rem 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.userform-btn{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 18px;
+    border: 2px solid white;
+    color: white;
+    padding: .5rem 2rem;
+    background-color: #ffffff00;
+    outline: none;
+    margin-right: 1rem;
+    transition: background-color .5s, color .5s;
+}
+
+.userform-btn-icon {
+    font-size: 30px;
+    margin-right: 1rem;
+}
+
+.userform-btn:hover
+{
+    background-color: white;
+    color: #491116;
+    border-color: white;
+}
+
+.userform-btn-active {
+    background-color: white;
+    color: #491116;
+    border-color: white;
+}
+
+.options-form{
+    margin: 2rem 0;
+    border: 1px solid #49111618;
+    border-radius: 5px;
+}
+
+.optionsform-container{
+    margin: 1rem 0;
+}
+
+.optionsform-btn-container{
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+.optionsform-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 18px;
+    border: 2px solid #7e7e7e;
+    color: #7e7e7e;
+    padding: .5rem 2rem;
+    background-color: #ffffff00;
+    outline: none;
+    margin-right: 1rem;
+    transition: background-color .5s, color .5s;
+}
+
+.optionsform-btn:hover
+{
+    background-color: #491116;
+    color: #ffffff;
+    border-color: #491116;
+}
+
+.optionsform-btn-active {
+    background-color: #491116;
+    color: #ffffff;
+    border-color: #491116;
+}
+
+.optionsform-footer{
+    background-color: #491116;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.optionsform-footer-btn{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 18px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 1rem 3rem;
+    background-color: #ffffff00;
+    outline: none;
+    transition: background-color .5s, color .5s;
+}
+
+.optionsform-footer-text{
+    margin-top: 1rem;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 1500px) {
+    .user-form-content{
+        min-width: 500px;
+    }
+    
+}
+
+@media screen and (max-width: 1300px) {
+    .user-forms{
+        flex-direction: column;
+    }
+
+    .user-form{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .optionsform-btn {
+        font-size: 13px;
+        padding: .5rem 1rem;
+        margin-right: 1rem;
+    }
+    
+    .optionsform-footer-btn{
+        font-size: 15px;
+        padding: .75rem 2rem;
+    }
+
+    .optionsform-footer-text{
+        text-align: center;
+        max-width: 90%;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .user-form-content{
+        min-width: 0px;
+        align-items: center;
+    }
+
+    .userform-textbox-title{
+        width: 95%;
+        font-size: 17px;
+    }
+    
+    .userform-textbox   {
+        width: 95%;
+        font-size: 15px;
+    }
+
+    .optionsform-btn-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .optionsform-btn{
+        width: 100%;
+        margin-top: .5rem;
+    }
+
+    .userform-btn{
+        font-weight: 300;
+        font-size: 13px;
+        padding: .5rem 2rem;
+
+    }
+
+    .userform-btn-icon {
+        font-size: 25px;
+        margin-right: .75rem;
+    }
+}
+
+
+
+
